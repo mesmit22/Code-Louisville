@@ -27,11 +27,11 @@ body{
     margin: 0;
 }
 
-@media only screen and (max-width: 500px){
-    .logo-img-small{
-        width: 50px;
-        height: 50px;
-    }
+footer{
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    color: lightblue;
 }
 
 html, body{
@@ -77,12 +77,19 @@ header{
     flex: 3    
 }
 
+.flex-1of2{
+    flex: 1;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .flex-right{
     justify-content: flex-end;
 }
 
 .flex-item{
     flex:1;
+    min-width: 350px;
 }
 
 .nav > li{
@@ -110,16 +117,14 @@ header{
     background-color: var(--Logo-Background);
 }
 
-footer{
-    width: 75%;
-    margin: 0 auto;
-    background-color: black;
-    color: lightblue;
-}
-
 footer > h1{
     text-align: center;
     margin: auto 0;
+}
+
+p{
+    min-width: 250px;
+
 }
 
 footer,
@@ -128,5 +133,45 @@ footer,
 }
 
 .myself{
-    width: 250px;
+    display: inherit;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+canvas{
+    border: dotted 2px black;
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+    .flex-container{
+        flex-wrap: wrap;
+    }
+    .flex-item{
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .wrapper{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px){
+
 }
