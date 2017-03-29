@@ -8,9 +8,23 @@
     /*Other choice*/
     --Ice: rgb(153, 211, 223); 
     --Fresh-Water: rgb(136, 187, 214);
-    --Fresh-Water-Faded: rgba(136, 187, 214, .5);
+    --Fresh-Water-Faded-5: rgba(136, 187, 214, .5);
+    --Fresh-Water-light: rgb(198, 222, 236);
+    --Fresh-Water-Complement: rgb(78,135,140);
+    --Logo-Background: rgb(101,184,145);
     --Plaster: rgb(205, 205, 205);
     --Linen: rgb(233, 233, 233);
+}
+
+/*Custom browser specific reset*/
+
+h1{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+body{
+    margin: 0;
 }
 
 @media only screen and (max-width: 500px){
@@ -19,8 +33,38 @@
         height: 50px;
     }
 }
-header{
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Ivory-Black);
+}
+
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
     background-color: var(--Plaster);
+}
+
+.sticky{
+    margin-bottom: -50px;
+    min-height: 100%;
+}
+
+.wrapper section{
+    padding: 20px;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--Fresh-Water-Complement);
 }
 
 .flex-container{
@@ -29,6 +73,7 @@ header{
 }
 
 .flex-3of4{
+    align-self: center;
     flex: 3    
 }
 
@@ -43,18 +88,45 @@ header{
 .nav > li{
     vertical-align: middle;
     margin: 0 10px;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 10px;
-    background-color: var(--Fresh-Water-Faded);
+    background-color: var(--Fresh-Water-light);
     list-style-type: none;
 }
 
+.nav{
+    margin-left: 10px;
+}
+
 .nav a{
+    padding: 10px;
     text-decoration: none;
     color: var(--Prussian-Blue);
 }
 
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--Logo-Background);
+}
+
+footer{
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    color: lightblue;
+}
+
+footer > h1{
+    text-align: center;
+    margin: auto 0;
+}
+
+footer,
+.push{
+    height:50px;
+}
+
+.myself{
+    width: 250px;
 }
