@@ -1,10 +1,66 @@
+:root{
+    /*First choice*/
+    --Prussian-Blue: rgb(11, 60, 93);
+    --Sky-Blue: rgb(50, 140, 193);
+    --Gold-Leaf: rgb(217, 179, 16);
+    --Ivory-Black: rgb(29, 39, 49);
+
+    /*Other choice*/
+    --Ice: rgb(153, 211, 223); 
+    --Fresh-Water: rgb(136, 187, 214);
+    --Fresh-Water-Faded: rgba(136, 187, 214, .5);
+    --Plaster: rgb(205, 205, 205);
+    --Linen: rgb(233, 233, 233);
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+}
+
 @media only screen and (max-width: 500px){
     .logo-img-small{
         width: 50px;
         height: 50px;
     }
 }
+header{
+    background-color: var(--Plaster);
+}
 
 .flex-container{
     display: flex;
+    flex-direction: row;
+}
+
+.flex-3of4{
+    flex: 3    
+}
+
+.flex-right{
+    justify-content: flex-end;
+}
+
+.flex-item{
+    flex:1;
+}
+
+.nav > li{
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--Fresh-Water-Faded);
+    list-style-type: none;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--Prussian-Blue);
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
 }
