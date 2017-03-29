@@ -11,12 +11,6 @@
     --Fresh-Water-Faded: rgba(136, 187, 214, .5);
     --Plaster: rgb(205, 205, 205);
     --Linen: rgb(233, 233, 233);
-
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0;
 }
 
 @media only screen and (max-width: 500px){
