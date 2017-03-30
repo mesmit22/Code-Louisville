@@ -23,6 +23,15 @@ h1{
     -webkit-margin-after: 0em;
 }
 
+#badge-slider{
+    margin: 0 auto;
+}
+
+#badge-slider > img{
+    width: 100px;
+    display: inline;
+}
+
 body{
     margin: 0;
 }
@@ -44,6 +53,7 @@ body{
 }
 
 .wrapper{
+    max-width: 1100px;
     width: 75%;
     margin: 0 auto;
     background-color: var(--Plaster);
@@ -64,6 +74,7 @@ body{
 }
 
 header{
+    min-height: 165px;
     background-color: var(--Fresh-Water-Complement);
 }
 
@@ -117,14 +128,14 @@ header{
     background-color: var(--Logo-Background);
 }
 
-footer > h1{
+h1{
+    padding-bottom: 10px;
     text-align: center;
     margin: auto 0;
 }
 
 p{
     min-width: 250px;
-
 }
 
 footer,
@@ -138,8 +149,14 @@ footer,
     border-radius: 10px;
 }
 
+.treehouse-points{
+    width: 300px;
+    display: inherit;
+    margin: 0 auto;
+}
+
 canvas{
-    border: dotted 2px black;
+    display: none;
 }
 
 @media (max-width: 768px){
@@ -155,8 +172,8 @@ canvas{
     .flex-container{
         flex-wrap: wrap;
     }
-    .flex-item{
-
+    h1{
+        padding-top: 10px;
     }
 }
 
