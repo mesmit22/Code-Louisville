@@ -23,6 +23,11 @@ h1{
     -webkit-margin-after: 0em;
 }
 
+.active{
+    background-color: var(--Gold-Leaf);
+    border-radius: 10px;
+}
+
 #badge-slider{
 
 }
@@ -82,6 +87,21 @@ header{
 .flex-container{
     display: flex;
     flex-direction: row;
+}
+
+.break{
+    border-bottom: solid 2px black;
+    height: 4px;
+    margin: 10px 0px;
+}
+
+h2{
+    font-size: 20pt;
+    margin: 10px;
+}
+
+.col{
+    flex-direction: column;
 }
 
 .flex-3of4{
