@@ -78,12 +78,6 @@ function addBadge(){
         if(startRemove){
             $slider.find("img").last().remove();
         }
-        if(mq.matches){
-            numBadges = 11;
-        }
-        else{
-            numBadges = 10;
-        }
         if(counter == 11){
             startRemove = true;
         }
