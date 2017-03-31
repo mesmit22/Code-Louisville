@@ -1,3 +1,5 @@
+/*Global Color values*/
+
 :root{
     /*First choice*/
     --Prussian-Blue: rgb(11, 60, 93);
@@ -23,66 +25,51 @@ h1{
     -webkit-margin-after: 0em;
 }
 
-.active{
-    background-color: var(--Gold-Leaf);
-    border-radius: 10px;
-}
-
-#badge-slider{
-
-}
+/*Badge Slider*/
 
 #badge-slider > img{
     width: 100px;
     display: inline;
 }
 
-body{
-    margin: 0;
-}
-
-footer{
-    width: 75%;
-    margin: 0 auto;
-    background-color: black;
-    color: lightblue;
-}
-
-html, body{
-    height: 100%;
-    margin: 0;
-}
-
-body{
-    background-color: var(--Ivory-Black);
-}
-
-.wrapper{
-    min-width: 1100px;
-    max-width: 1100px;
-    width: 75%;
-    margin: 0 auto;
-    background-color: var(--Plaster);
-}
-
-.sticky{
-    margin-bottom: -50px;
-    min-height: 100%;
-}
-
-.wrapper section{
-    padding: 20px;
-}
-
-.container{
-    width: 75%;
-    margin: 0 auto;
-}
+/*Navigation*/
 
 header{
     min-height: 175px;
     background-color: var(--Fresh-Water-Complement);
 }
+
+.active{
+    background-color: var(--Gold-Leaf);
+    border-radius: 10px;
+}
+
+.nav > li{
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: var(--Fresh-Water-light);
+    list-style-type: none;
+}
+
+.nav{
+    margin-left: 10px;
+}
+
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Prussian-Blue);
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: var(--Logo-Background);
+}
+
+/*Content*/
 
 .flex-container{
     display: flex;
@@ -124,31 +111,6 @@ h2{
     min-width: 350px;
 }
 
-.nav > li{
-    vertical-align: middle;
-    margin: 0 10px;
-    padding: 10px 0;
-    border-radius: 10px;
-    background-color: var(--Fresh-Water-light);
-    list-style-type: none;
-}
-
-.nav{
-    margin-left: 10px;
-}
-
-.nav a{
-    padding: 10px;
-    text-decoration: none;
-    color: var(--Prussian-Blue);
-}
-
-.logo{
-    width: 50px;
-    height: 50px;
-    background-color: var(--Logo-Background);
-}
-
 h1{
     padding-bottom: 10px;
     text-align: center;
@@ -159,10 +121,9 @@ p{
     min-width: 250px;
 }
 
-footer,
-.push{
-    max-width: 1100px;
-    height: 50px;
+.container{
+    width: 75%;
+    margin: 0 auto;
 }
 
 .myself{
@@ -180,6 +141,55 @@ footer,
 canvas{
     display: none;
 }
+
+/*Page formatting*/
+
+body{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Ivory-Black);
+}
+
+.wrapper{
+    min-width: 1100px;
+    max-width: 1100px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: var(--Plaster);
+}
+
+.sticky{
+    margin-bottom: -50px;
+    min-height: 100%;
+}
+
+.wrapper section{
+    padding: 20px;
+}
+
+/*Footer*/
+
+footer,
+.push{
+    max-width: 1100px;
+    height: 50px;
+}
+
+footer{
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    color: lightblue;
+}
+
+/*Media Queries*/
 
 @media (min-width: 100px) and (max-width: 700px){
     .wrapper{
