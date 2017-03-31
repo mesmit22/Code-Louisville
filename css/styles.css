@@ -24,7 +24,7 @@ h1{
 }
 
 #badge-slider{
-    margin: 0 auto;
+
 }
 
 #badge-slider > img{
@@ -53,6 +53,7 @@ body{
 }
 
 .wrapper{
+    min-width: 1100px;
     max-width: 1100px;
     width: 75%;
     margin: 0 auto;
@@ -74,7 +75,7 @@ body{
 }
 
 header{
-    min-height: 165px;
+    min-height: 175px;
     background-color: var(--Fresh-Water-Complement);
 }
 
@@ -160,7 +161,7 @@ canvas{
     display: none;
 }
 
-@media (max-width: 768px){
+@media (min-width: 100px) and (max-width: 700px){
     .wrapper{
         width: 100%;
     }
@@ -178,9 +179,28 @@ canvas{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 700px) and (max-width: 900px){
     .wrapper{
         width: 100%;
+        max-width: 700px;
+        min-width:700px;
+    }
+    footer{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+    #badge-slider > img{
+        width: 100px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px){
+    .wrapper{
+        width: 75%;
+        max-width: 900px;
+        min-width: 900px;
     }
     footer{
         width: 100%;
@@ -190,6 +210,14 @@ canvas{
     }
 }
 
-@media (min-width: 1024px){
 
+@media (min-width: 1100px){
+    .wrapper{
+        min-width: 1100px;
+        max-width: 1100px;
+    }
+    footer{
+        width:1100px;
+    }
 }
+

@@ -1,5 +1,3 @@
-var mq = window.matchMedia('@media all and (max-width: 1350px');
-
 var $slider = $("#badge-slider");
 var counter = 0;
 var startRemove = false;
